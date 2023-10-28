@@ -49,7 +49,7 @@ execute_wrap cat "$CACHE_DOMAIN_SCRIPTS_DIR/scripts/config.json"
 print_banner "generating dnsmasq.d configuration"
 execute sh -c "cd $CACHE_DOMAIN_SCRIPTS_DIR/scripts && ./create-dnsmasq.sh"
 execute sh -c "cd $CACHE_DOMAIN_SCRIPTS_DIR/scripts/output/dnsmasq/ && cat $CACHE_DOMAIN_SCRIPTS_DIR/scripts/output/dnsmasq/* > $DNSMASQD_DIR/99_lancache.conf"
-execute_wrap cat "$DNSMASQD_DIR/99_lancache.conf"
+execute_wrap cat "$DNSMASQD_DIR/99-lancache.conf"
 
 # Clean up
 print_banner "clean up"
