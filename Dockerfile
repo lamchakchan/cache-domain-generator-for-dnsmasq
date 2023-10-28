@@ -22,6 +22,5 @@ COPY config.template.json $WORK_DIR
 
 COPY cron/ $CROND_DIR
 RUN chmod 0644 $CROND_DIR/cache-domain-generator
-RUN crontab /etc/cron.d/cache-domain-generator
 
 CMD sh start.sh
