@@ -12,8 +12,8 @@
   <Overview/>
   <Category/>
   <WebUI/>
-  <TemplateURL/>
-  <Icon/>
+  <TemplateURL>https://raw.githubusercontent.com/lamchakchan/cache-domain-generator-for-dnsmasq/master/cache-domain-generator.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/lamchakchan/cache-domain-generator-for-dnsmasq/master/images/cache-domain-generator.png</Icon>
   <ExtraParams>--hostname=cache-domain-generator</ExtraParams>
   <PostArgs/>
   <CPUset/>
