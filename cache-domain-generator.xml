@@ -3,7 +3,7 @@
   <Name>cache-domain-generator</Name>
   <Repository>lamchakchan/cache-domain-generator-for-dnsmasq:latest</Repository>
   <Registry>https://github.com/lamchakchan/cache-domain-generator-for-dnsmasq/</Registry>
-  <Network>br0</Network>
+  <Network>host</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
