@@ -31,6 +31,9 @@ $NOCOLOR"
 print_banner "configuring environment"
 execute printenv > /etc/environment
 
+print_banner "running sync"
+execute sh "$WORK_DIR/sync.sh"
+
 print_banner "configuring cron"
 execute sed -i -e "s/{CRON_EXPRESSION}/$CRON_EXPRESSION/g" "$CROND_DIR/cache-domain-generator"
 execute crontab "$CROND_DIR/cache-domain-generator"

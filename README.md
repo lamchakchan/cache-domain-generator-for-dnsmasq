@@ -28,3 +28,19 @@ The network target to offload cache traffic to for the redirection rules.  This 
 
 ### Bind Mount for `/etc/dnsmasq.d`
 The job writes the output to `/etc/dnsmasq.d`.  Bind mount the host volume to this container path to share the output with the DNS service such as PiHole.
+
+## Testing
+To test this locally, use the following set of commands after making changes.
+
+**Build It**
+```
+docker build -t <image_name>:<image_tag> .
+```
+
+**Run It**
+```
+docker run -it -e LANCACHE_IP=<ADDRESS> <image_name>:<image_tag>
+```
+
+## Builds
+Builds are supported by Github Action with this [job](.github/workflows/build.yml).
