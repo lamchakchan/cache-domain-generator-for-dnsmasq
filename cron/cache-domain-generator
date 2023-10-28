@@ -1,0 +1,1 @@
+{CRON_EXPRESSION} sh "$WORK_DIR/sync.sh" > /proc/1/fd/1 2> /proc/1/fd/2

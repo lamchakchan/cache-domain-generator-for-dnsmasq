@@ -1,0 +1,8 @@
+{
+	"ips": {
+		"all": "{NETWORK_ADDRESS}"
+	},
+	"cache_domains": {
+		"default": 	"all"
+	}
+}

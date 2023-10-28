@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cache-domain-generator</Name>
+  <Repository>lamchakchan/cache-domain-generator-for-dnsmasq:latest</Repository>
+  <Registry/>
+  <Network>none</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1698456249</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host dnsmasq directory" Target="/etc/dnsmasq.d" Default="/mnt/user/appdata/pihole/dnsmasq.d/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pihole/dnsmasq.d/</Config>
+  <Config Name="Cron Expression" Target="CRON_EXPRESSION" Default="0 0 * * 0" Mode="" Description="Time interval for the refresh to run.  Defualts to weekly on Sunday." Type="Variable" Display="always" Required="false" Mask="false">* * * * *</Config>
+  <Config Name="Cache Domain Git Url" Target="CACHE_DOMAIN_GIT_URL" Default="https://github.com/uklans/cache-domains.git" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/uklans/cache-domains.git</Config>
+  <Config Name="Lancache IP" Target="LANCACHE_IP" Default="" Mode="" Description="The IP or domain name to the Lancache server" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.12</Config>
+</Container>
