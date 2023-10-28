@@ -1,4 +1,4 @@
-#cache-domain-generator-for-dnsmasq
+# [cache-domain-generator-for-dnsmasq](https://github.com/lamchakchan/cache-domain-generator-for-dnsmasq)
 A cron script wrapped in a docker image that pulls from this [`uklans/cache-domains`](https://github.com/uklans/cache-domains) to make a `dnsmasq` configuration file.  This process supports timely updates for CDN cache routing for [Lancache](https://lancache.net/docs/installation/docker/) when coupled with [PiHole](https://github.com/pi-hole/pi-hole).
 
 ## Docker Hub
